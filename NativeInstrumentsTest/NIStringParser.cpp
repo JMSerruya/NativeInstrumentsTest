@@ -35,12 +35,13 @@ unsigned int NIStringParser::getNiCountW(const wchar_t* inputString)
     return count;
 }
 
-char * replaceNiWithNI(const char* inputString)
+char * NIStringParser::replaceNiWithNI(const char* inputString)
 {
     char * newString = const_cast<char*>(inputString);
     return newString;
 }
-wchar_t *replaceNiWithNI(const wchar_t* inputString)
+
+wchar_t * NIStringParser::replaceNiWithNI(const wchar_t* inputString)
 {
     wchar_t * newString = const_cast<wchar_t*>(inputString);
     return newString;

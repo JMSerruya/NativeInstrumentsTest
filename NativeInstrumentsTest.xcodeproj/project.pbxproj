@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		66B90247196D77C60040C628 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66B90246196D77C60040C628 /* main.cpp */; };
 		66B90249196D77C60040C628 /* NativeInstrumentsTest.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66B90248196D77C60040C628 /* NativeInstrumentsTest.1 */; };
+		66B90251196D792D0040C628 /* NIStringParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66B9024F196D792D0040C628 /* NIStringParser.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		66B90243196D77C60040C628 /* NativeInstrumentsTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NativeInstrumentsTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66B90246196D77C60040C628 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		66B90248196D77C60040C628 /* NativeInstrumentsTest.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = NativeInstrumentsTest.1; sourceTree = "<group>"; };
+		66B9024F196D792D0040C628 /* NIStringParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NIStringParser.cpp; sourceTree = "<group>"; };
+		66B90250196D792D0040C628 /* NIStringParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIStringParser.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 			children = (
 				66B90246196D77C60040C628 /* main.cpp */,
 				66B90248196D77C60040C628 /* NativeInstrumentsTest.1 */,
+				66B9024F196D792D0040C628 /* NIStringParser.cpp */,
+				66B90250196D792D0040C628 /* NIStringParser.h */,
 			);
 			path = NativeInstrumentsTest;
 			sourceTree = "<group>";
@@ -117,6 +122,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66B90251196D792D0040C628 /* NIStringParser.cpp in Sources */,
 				66B90247196D77C60040C628 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,6 +233,7 @@
 				66B9024E196D77C60040C628 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

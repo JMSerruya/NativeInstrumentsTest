@@ -10,9 +10,9 @@
 
 int main(int argc, const char * argv[])
 {
-
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    const char *szTestString1 = "Ni nI NI nI Ni";
+    const wchar_t *szTestString2 = L"Ni nI NI nI Ni";
+    
     return 0;
 }
 

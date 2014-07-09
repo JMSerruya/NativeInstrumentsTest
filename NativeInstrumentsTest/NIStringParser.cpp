@@ -39,14 +39,14 @@ std::string NIStringParser::replaceNiWithNIA(const char* inputCString)
 {
     //convert to C++ string to make use of stdlib
     std::string newString(inputCString);
-    const std::string s = "Ni";
-    const std::string t = "NI";
+    const std::string sourceSubString = "Ni";
+    const std::string targetSubString = "NI";
 
     std::string::size_type n = 0;
-    while ( ( n = newString.find( s, n ) ) != std::string::npos )
+    while ( ( n = newString.find( sourceSubString, n ) ) != std::string::npos )
     {
-        newString.replace( n, s.size(), t );
-        n += t.size();
+        newString.replace( n, sourceSubString.size(), targetSubString );
+        n += targetSubString.size();
     }
     return newString;
 }
@@ -55,14 +55,14 @@ std::wstring NIStringParser::replaceNiWithNIW(const wchar_t* inputCString)
 {
     //convert to C++ wstring to make use of stdlib
     std::wstring newString(inputCString);
-    const std::wstring s = L"Ni";
-    const std::wstring t = L"NI";
+    const std::wstring sourceSubString = L"Ni";
+    const std::wstring targetSubString = L"NI";
 
     std::string::size_type n = 0;
-    while ( ( n = newString.find( s, n ) ) != std::string::npos )
+    while ( ( n = newString.find( sourceSubString, n ) ) != std::string::npos )
     {
-        newString.replace( n, s.size(), t );
-        n += t.size();
+        newString.replace( n, sourceSubString.size(), targetSubString );
+        n += targetSubString.size();
     }
     return newString;
 }

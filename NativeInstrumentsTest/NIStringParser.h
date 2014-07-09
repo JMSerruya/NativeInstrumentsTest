@@ -16,8 +16,8 @@ class NIStringParser
     public:
         static unsigned int getNiCountA(const char* inputString);
         static unsigned int getNiCountW(const wchar_t* inputString);
-        static char * replaceNiWithNI(const char* inputString);
-        static wchar_t *replaceNiWithNI(const wchar_t* inputString);
+        static char * replaceNiWithNIA(const char* inputString);
+        static wchar_t *replaceNiWithNIW(const wchar_t* inputString);
 
 };
 #endif

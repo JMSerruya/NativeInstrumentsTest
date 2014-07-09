@@ -35,14 +35,34 @@ unsigned int NIStringParser::getNiCountW(const wchar_t* inputString)
     return count;
 }
 
-char * NIStringParser::replaceNiWithNIA(const char* inputString)
+std::string NIStringParser::replaceNiWithNIA(const char* inputCString)
 {
-    char * newString = const_cast<char*>(inputString);
+    //convert to C++ string to make use of stdlib
+    std::string newString(inputCString);
+    const std::string s = "Ni";
+    const std::string t = "NI";
+
+    std::string::size_type n = 0;
+    while ( ( n = newString.find( s, n ) ) != std::string::npos )
+    {
+        newString.replace( n, s.size(), t );
+        n += t.size();
+    }
     return newString;
 }
 
-wchar_t * NIStringParser::replaceNiWithNIW(const wchar_t* inputString)
+std::wstring NIStringParser::replaceNiWithNIW(const wchar_t* inputCString)
 {
-    wchar_t * newString = const_cast<wchar_t*>(inputString);
+    //convert to C++ wstring to make use of stdlib
+    std::wstring newString(inputCString);
+    const std::wstring s = L"Ni";
+    const std::wstring t = L"NI";
+
+    std::string::size_type n = 0;
+    while ( ( n = newString.find( s, n ) ) != std::string::npos )
+    {
+        newString.replace( n, s.size(), t );
+        n += t.size();
+    }
     return newString;
 }

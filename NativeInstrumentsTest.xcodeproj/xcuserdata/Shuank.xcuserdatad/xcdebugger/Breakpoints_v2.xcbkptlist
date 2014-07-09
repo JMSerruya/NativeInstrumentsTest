@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NativeInstrumentsTest/main.cpp"
-            timestampString = "426612557.072807"
+            timestampString = "426612757.850552"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "19"
@@ -65,6 +65,52 @@
             endingLineNumber = "17"
             landmarkName = "main(int argc, const char * argv[])"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NativeInstrumentsTest/NIStringParser.cpp"
+            timestampString = "426613815.194095"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "NIStringParser::replaceNiWithNIA(const char* inputCString)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NIStringParser::replaceNiWithNIA(char const*)"
+                  moduleName = "NativeInstrumentsTest"
+                  urlString = "file:///Users/Shuank/Dev/NativeInstrumentsTest/NativeInstrumentsTest/NIStringParser.cpp"
+                  timestampString = "426613381.478793"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "2983">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NIStringParser::replaceNiWithNIA(char const*)"
+                  moduleName = "NativeInstrumentsTest"
+                  urlString = "file:///Users/Shuank/Dev/NativeInstrumentsTest/NativeInstrumentsTest/NIStringParser.cpp"
+                  timestampString = "426613381.47901"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "3023">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

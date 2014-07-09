@@ -58,7 +58,7 @@ std::wstring NIStringParser::replaceNiWithNIW(const wchar_t* inputCString)
     const std::wstring sourceSubString = L"Ni";
     const std::wstring targetSubString = L"NI";
 
-    std::string::size_type n = 0;
+    std::wstring::size_type n = 0;
     while ( ( n = newString.find( sourceSubString, n ) ) != std::string::npos )
     {
         newString.replace( n, sourceSubString.size(), targetSubString );

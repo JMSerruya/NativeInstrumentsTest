@@ -7,12 +7,16 @@
 //
 
 #include <iostream>
+#include "NIStringParser.h"
 
 int main(int argc, const char * argv[])
 {
     const char *szTestString1 = "Ni nI NI nI Ni";
     const wchar_t *szTestString2 = L"Ni nI NI nI Ni";
     
+    unsigned int asciiNiCount = NIStringParser::getNiCountA(szTestString1);
+    std::cout << "Found " << asciiNiCount << " occurrences of Ni. " << "New string: ";
+    std::cin.ignore();
     return 0;
 }
 

@@ -14,8 +14,8 @@
 class NIStringParser
 {
     public:
-        static unsigned int getNiCount(const char* inputString);
-        static unsigned int getNiCount(const wchar_t* inputString);
+        static unsigned int getNiCountA(const char* inputString);
+        static unsigned int getNiCountW(const wchar_t* inputString);
 
 };
 #endif

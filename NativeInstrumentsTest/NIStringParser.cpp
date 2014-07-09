@@ -8,10 +8,18 @@
 
 #include "NIStringParser.h"
 
-unsigned int NIStringParser::getNiCount(const char* inputString) {
-    return 0;
+unsigned int NIStringParser::getNiCountA(const char* inputString) {
+    unsigned int count = 0;
+    const char *compareString = "Ni";
+    char* inputStringCopy = const_cast<char *>(inputString);
+    while ((inputStringCopy = strstr( inputStringCopy, compareString )))
+    {
+        count++;
+        inputStringCopy += strlen(compareString);
+    }
+    return count;
 }
 
-unsigned int NIStringParser::getNiCount(const wchar_t* inputString) {
+unsigned int NIStringParser::getNiCountW(const wchar_t* inputString) {
     return 0;
 }
